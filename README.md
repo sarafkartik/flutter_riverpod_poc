@@ -12,4 +12,5 @@ It is typically used for:
 2. centralizing the logic for modifying some state (aka "business logic") in a single place, improving maintainability over time.
 
 ## Architecture Diagram
-![The application architecture is depicted below]
+[The application architecture is depicted below]
+![arch_diagram](https://user-images.githubusercontent.com/79578417/215424823-aaa9916d-91f3-42dc-b993-1d81ed498d90.png)
