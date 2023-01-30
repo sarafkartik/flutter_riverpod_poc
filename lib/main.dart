@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_init/src/presentation/ui/random_fact_page.dart';
+import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_page.dart';
 
 void main() {
   runApp(const MyApp());

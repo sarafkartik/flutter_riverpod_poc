@@ -3,9 +3,9 @@ import 'package:mockito/mockito.dart';
 import 'package:riverpod_init/src/domain/random_fact_repository.dart';
 import 'package:riverpod_init/src/data/random_fact.dart';
 import 'package:riverpod_init/src/network/common/api_response.dart';
-import 'package:riverpod_init/src/presentation/state/random_fact/random_fact_notifier.dart';
+import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_notifier.dart';
 import 'package:riverpod_init/src/presentation/state/random_fact/random_fact_state.dart';
-import 'package:riverpod_init/src/presentation/state/random_fact_base_state.dart';
+import 'package:riverpod_init/src/presentation/state/random_fact/random_fact_base_state.dart';
 import 'package:state_notifier_test/state_notifier_test.dart';
 
 import 'random_fact_state_notifier_test.mocks.dart';

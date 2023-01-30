@@ -1,5 +1,5 @@
 import '../../../data/random_fact.dart';
-import '../random_fact_base_state.dart';
+import 'random_fact_base_state.dart';
 
 class RandomFactInitialState extends RandomFactBaseState {}
 
