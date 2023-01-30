@@ -1,7 +1,6 @@
 # riverpod_init
 
-A new Flutter project.
-
+A simple flutter application demonstrating the use of [Riverpod](https://docs-v2.riverpod.dev/) for state management.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
