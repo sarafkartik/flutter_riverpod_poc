@@ -6,6 +6,8 @@ import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_provid
 
 import '../../state/random_fact/random_fact_state.dart';
 
+//ConsumerStateful
+
 class RandomFactPage extends ConsumerStatefulWidget {
   const RandomFactPage({super.key});
 
@@ -68,6 +70,66 @@ class LoadRandomFactWidget extends StatelessWidget {
     );
   }
 }
+
+
+/*.
+.
+.
+.
+.
+.
+
+ */
+
+// Stateless with Consumer
+class RandomFactPageStateless extends StatelessWidget {
+  const RandomFactPageStateless({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    //final state = ref.watch(randomFactProvider);
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Random Facts'),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: const [
+          ConsumerLoadRandomFactWidget(),
+          SizedBox(height: 35),
+        ],
+      ),
+    );
+  }
+}
+
+class ConsumerLoadRandomFactWidget extends ConsumerWidget {
+  const ConsumerLoadRandomFactWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(randomFactProvider);
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: () => ref.read(randomFactProvider.notifier).loadFact(),
+          child: const Text('Load random fact'),
+        ),
+        const SizedBox(height: 25),
+        if (state is RandomFactLoadingState)
+          const Center(child: CircularProgressIndicator()),
+        if (state is RandomFactLoadedState)
+          RandomFactCard(
+            (state).randomFact,
+          ),
+        if (state is RandomFactErrorState) Center(child: Text((state).error)),
+      ],
+    );
+  }
+}
+
+//Common Fact Card
 
 class RandomFactCard extends StatelessWidget {
   final RandomFact randomFact;
