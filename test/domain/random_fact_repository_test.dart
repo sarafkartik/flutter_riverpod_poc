@@ -3,7 +3,8 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:riverpod_init/src/domain/random_fact_repository.dart';
 import 'package:riverpod_init/src/data/random_fact.dart';
-import 'package:riverpod_init/src/network/api/common/api_response.dart';
+import 'package:riverpod_init/src/network/common/api_response.dart';
+
 
 import 'random_fact_repository_test.mocks.dart';
 

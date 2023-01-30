@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import '../../../data/random_fact.dart';
-import '../common/api_response.dart';
-import '../common/common_config.dart' as config;
+import '../../common/api_response.dart';
+import '../../common/common_config.dart' as config;
 
 class RandomFactService {
   final Dio _dio = Dio();

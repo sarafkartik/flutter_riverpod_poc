@@ -6,9 +6,9 @@
 import 'dart:async' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:riverpod_init/src/domain/random_fact_repository.dart' as _i3;
 import 'package:riverpod_init/src/data/random_fact.dart' as _i5;
-import 'package:riverpod_init/src/network/api/common/api_response.dart' as _i2;
+import 'package:riverpod_init/src/domain/random_fact_repository.dart' as _i3;
+import 'package:riverpod_init/src/network/common/api_response.dart' as _i2;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
