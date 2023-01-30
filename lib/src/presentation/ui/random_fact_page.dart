@@ -6,15 +6,15 @@ import 'package:riverpod_init/src/presentation/state/random_fact/random_fact_pro
 
 import '../state/random_fact/random_fact_state.dart';
 
-class RandomFactScreen extends ConsumerStatefulWidget {
-  const RandomFactScreen({super.key});
+class RandomFactPage extends ConsumerStatefulWidget {
+  const RandomFactPage({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
       _RandomFactScreenState();
 }
 
-class _RandomFactScreenState extends ConsumerState<RandomFactScreen> {
+class _RandomFactScreenState extends ConsumerState<RandomFactPage> {
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(randomFactProvider);
