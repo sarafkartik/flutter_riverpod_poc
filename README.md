@@ -1,15 +1,15 @@
 # riverpod_init
 
 A simple flutter application demonstrating the use of [Riverpod](https://docs-v2.riverpod.dev/) for state management.
-## Getting Started
+## Riverpod 
+Riverpod (anagram of Provider) is a reactive caching framework for Flutter/Dart. It can automatically fetch, cache, combine and recompute network requests, while also taking care of errors.
+Riverpod has multiple types fo providers that can be used. This project leverages the use of State Notifier Provider.
 
-This project is a starting point for a Flutter application.
+## State Notifer Provider 
+This application uses (State Notifier Provider) (https://docs-v2.riverpod.dev/docs/providers/state_notifier_provider) for providing State Notifier which notifies if there is a change in state.
+It is typically used for:
+1. exposing an immutable state which can change over time after reacting to custom events.
+2. centralizing the logic for modifying some state (aka "business logic") in a single place, improving maintainability over time.
 
-A few resources to get you started if this is your first Flutter project:
+##
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
