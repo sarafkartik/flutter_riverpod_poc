@@ -20,5 +20,5 @@ The State Notifer exposes an immutable state which can provided to the widget us
 ## Testing 
 
 This apploication utilises [Mockito](https://pub.dev/packages/mockito), along with [Build Runner](https://pub.dev/packages/build_runner) for generating mocks and stubs.
-It also user [State Notifer Test](https://pub.dev/packages/state_notifier_test) for testing State Notifer.
+It also uses [State Notifer Test](https://pub.dev/packages/state_notifier_test) for testing State Notifer.
 
