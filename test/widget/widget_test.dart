@@ -15,7 +15,7 @@ import 'package:riverpod_init/src/domain/random_fact_repository.dart';
 import 'package:riverpod_init/src/data/random_fact.dart';
 import 'package:riverpod_init/src/network/common/api_response.dart';
 import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_notifier.dart';
-import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_provider.dart';
+import 'package:riverpod_init/src/providers/providers.dart';
 
 import 'widget_test.mocks.dart';
 

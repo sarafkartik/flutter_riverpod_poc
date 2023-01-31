@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_init/src/data/random_fact.dart';
 import 'package:riverpod_init/src/presentation/state/random_fact/random_fact_base_state.dart';
-import 'package:riverpod_init/src/presentation/ui/random_fact/random_fact_provider.dart';
 
+import '../../../providers/providers.dart';
 import '../../state/random_fact/random_fact_state.dart';
 
 //ConsumerStateful
